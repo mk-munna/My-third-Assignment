@@ -47,39 +47,40 @@
         <nav>
             <div class="navbar bg-base-100">
                 <div class=" flex flex-1 lg:justify-left lg:flex-row-reverse ">
-                <div class="navbar-start ">
-                    <div class="dropdown lg:hidden md:hidden">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
+                    <div class="navbar-start ">
+                        <div class="dropdown lg:hidden md:hidden">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                        <!-- displayed menu -->
+                        <div>
+                            <ul class="hidden lg:flex justify-center gap-10 text-zinc-800 ">
+                                <li><a href="#" class="text-primary font-bold">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!--  -->
                     </div>
-                    <!-- displayed menu -->
-                    <div>
-                        <ul class="hidden lg:flex justify-center gap-10 text-zinc-800 ">
-                            <li><a href="#" class="text-primary font-bold">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                    <div class="lg:w-6/12  navbar-center">
+                        <p class="text-neutral-900 lg:text-4xl  text-2xl font-extrabold font-['Manrope']">Mk Hockey<span
+                                class="text-primary">'</span>s</p>
                     </div>
-                    <!--  -->
-                </div>
-                <div class="lg:w-6/12  navbar-center">
-                    <p class="text-neutral-900 lg:text-4xl  text-2xl font-extrabold font-['Manrope']">Mk Hockey<span class="text-primary">'</span>s</p>
-                </div>
                 </div>
                 <!-- nav and title div end -->
                 <div class="navbar-end w-8/12 lg:w-4/12 gap-4">
@@ -102,42 +103,97 @@
             <div class="carousel w-full lg:h-[550px] rounded-2xl">
                 <!-- carousel box -->
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img width="100%" src="Resources/Images/1.png" />
-                  <div class="absolute flex  lg:left-8 lg:bottom-8 left-[35%] bottom-[5%] gap-4  ">
-                    <a href="#slide3" class="btn btn-circle  bg-black text-white ">❮</a> 
-                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
-                  </div>
-                </div> 
+                    <img width="100%" src="Resources/Images/1.png" />
+                    <div class="absolute flex  lg:left-8 lg:bottom-8 left-[35%] bottom-[5%] gap-4  ">
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
                 <!-- ------- -->
                 <!-- carousel box -->
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img width="100%" src="Resources/Images/4.png" />
-                  <div class="absolute flex  lg:left-8 lg:bottom-8 left-[35%] bottom-[5%] gap-4  ">
-                    <a href="#slide1" class="btn btn-circle  bg-black text-white ">❮</a> 
-                    <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
-                  </div>
-                </div> 
+                    <img width="100%" src="Resources/Images/4.png" />
+                    <div class="absolute flex  lg:left-8 lg:bottom-8 left-[35%] bottom-[5%] gap-4  ">
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
                 <!-- ------- -->
                 <!-- carousel box -->
                 <div id="slide3" class="carousel-item relative w-full">
-                  <img width="100%" src="Resources/Images/3.png" />
-                  <div class="absolute flex  lg:left-8 lg:bottom-8 left-[35%] bottom-[5%] gap-4  ">
-                    <a href="#slide2" class="btn btn-circle  bg-black text-white ">❮</a> 
-                    <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
-                  </div>
-                </div> 
+                    <img width="100%" src="Resources/Images/3.png" />
+                    <div class="absolute flex  lg:left-8 lg:bottom-8 left-[35%] bottom-[5%] gap-4  ">
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white ">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
                 <!-- ------- -->
-              </div>
-              <!-- black box over image -->
-              <div class="lg:absolute flex mt-4 lg:right-8 lg:bottom-8 gap-4  ">
+            </div>
+            <!-- black box over image -->
+            <div class="lg:absolute flex mt-4 lg:right-8 lg:bottom-8 gap-4  ">
                 <div class="bg-[#131318] lg:p-8 p-4 rounded-2xl">
                     <p class="text-white">Meet all the heroes from the field</p>
-                    <p class="lg:mt-4 mt-2 lg:w-[502px] w-[303px] text-white text-opacity-60 text-[14px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                    <p class="lg:mt-4 mt-2 lg:w-[502px] w-[303px] text-white text-opacity-60 text-[14px]">Dit amet
+                        consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                        nullam proin. </p>
                 </div>
-              </div>
+            </div>
         </div>
     </header>
-    <main class="max-w-7xl"></main>
+    <!-- header done -->
+    <main class="lg:max-w-7xl max-w[90%] mx-auto">
+        <!-- Progress section start -->
+        <section>
+            <div
+                class="py-6 border-dashed border-y-[1px] border-neutral-900 lg:w-full lg:px-[282px] w-[303px] mx-auto ">
+                <p class="text-center text-neutral-900 lg:text-4xl text-xl font-extrabold">Professional Hockeys Club</p>
+                <p class=" text-center mt-4 text-neutral-900 text-opacity-60 lg:text-base text-sm font-medium ">Dit amet
+                    consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                    nullam proin. </p>
+
+            </div>
+            <!-- progress bar 1-->
+            <div class=" mt-12 flex lg:flex-row flex-col gap-8 justify-center items-center">
+                <div class="text-center">
+                    <div class="  radial-progress text-red-500" style="--value:90;" role="progressbar">90%
+                    </div>
+                    <p class=" mt-6 mb-4 text-center text-neutral-900 text-xl font-semibold">Prayer Facility
+                    </p>
+                    <p class="w-64 text-center text-neutral-900 text-opacity-60 text-base   ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                </div>
+                <!-- progress bar 2 -->
+                <div class="text-center">
+                    <div class="  radial-progress text-emerald-400" style="--value:95;" role="progressbar">95%
+                    </div>
+                    <p class=" mt-6 mb-4 text-center text-neutral-900 text-xl font-semibold">Prayer Facility
+                    </p>
+                    <p class="w-64 text-center text-neutral-900 text-opacity-60 text-base   ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                </div>
+                <!-- progress bar 3 -->
+                <div class="text-center">
+                    <div class="  radial-progress text-amber-300" style="--value:85;" role="progressbar">85%
+                    </div>
+                    <p class=" mt-6 mb-4 text-center text-neutral-900 text-xl font-semibold">Prayer Facility
+                    </p>
+                    <p class="w-64 text-center text-neutral-900 text-opacity-60 text-base   ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                </div>
+                
+                <!-- progress bar 4 -->
+                <div class="text-center">
+                    <div class="  radial-progress text-blue-500" style="--value:75;" role="progressbar">75%
+                    </div>
+                    <p class=" mt-6 mb-4 text-center text-neutral-900 text-xl font-semibold">Prayer Facility
+                    </p>
+                    <p class="w-64 text-center text-neutral-900 text-opacity-60 text-base   ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                </div>
+                <!-- --- -->
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
